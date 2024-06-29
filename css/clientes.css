@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    background: #212529;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0px 50px;
+    padding-top: 20px;
+}
+
+header h2 {
+    letter-spacing: 3px;
+    font-size: 30px;
+}
+
+header h3 {
+    color: #ffb742;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.titulo h2 {
+    color: #ffb742;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+nav td {
+    padding: 0 15px;
+    transition: all ease 0.5s;
+}
+
+nav td:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav button a {
+    text-decoration: none;
+    color: black;
+}
+
+nav button {
+    background-color: #ffb742;
+    color: black;
+    padding: 5px 15px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+nav img {
+    width: 20px;
+}
+
+nav button:hover {
+    background-color: #f59c0d;
+}
+
+nav button:active {
+    background-color: #ffb742;
+}
+
+aside {
+    position: fixed;
+    border: solid 2px #ffb742;
+    border-radius: 10px;
+    top: 250px;
+    right: 20px;
+    width: 240px;
+    height: 380px;  
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+aside hr {
+    border-color: #f59c0d;
+}
+
+aside h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    }
+    
+.video iframe,
+.video object,
+.video embed {
+position: absolute;
+top: 10px;
+left: 10px;
+width: 90%;
+height: 80%;
+}
+
+aside button {
+    background-color: #ffb742;
+    color: black;
+    padding: 5px 15px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 70px;
+    transition-duration: 0.3s;
+}
+
+aside button a {
+    text-decoration: none;
+    color: black;
+}
+
+aside button:hover {
+    background-color: #f59c0d;
+    transform: scale(1.15);
+}
+
+section {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+article h1 {
+    text-align: center;;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+article h2 {
+    text-align: center;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+article h1 span {
+    color:#ffb742;
+}
+
+.clientes {
+    margin: 0px 60px;
+    display: grid;
+    gap: 50px;
+    place-content: center;
+    place-items: center;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(500px, 1fr)
+    );
+}
+
+.clientes img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.clientes img {animation:blur-in-expand 0.5s linear both} 
+@keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}50%
+{transform:scale(1);filter:blur(0);opacity:1}}
+
+
+.pie {
+    margin-top: -10px;
+    background-color:#2b2d2d;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+    padding: 2% 1%;
+}
+
+footer a {
+    text-decoration: none;
+    transition: all ease 0.5s;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+footer h2 {
+    letter-spacing: 3px;
+    font-size: 30px;
+    color: #ffb742;
+}
+
+.pie span {
+    color: #ffb742;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes p {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.redes img {
+    width: 50px;
+    padding: 4px;
+    transition: all ease 0.5s;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.copyright {
+    background-color:#171818;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+
+.maps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maps iframe {
+    padding: 4px;
+    background-color: #ffb742;
+    border-radius: 8px;
+}
+
+.maps {animation:blur-in-expand 0.4s linear both} 
+@keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}100%
+{transform:scale(1);filter:blur(0);opacity:1}}
+
+@media screen and (max-width: 780px) {
+    body {
+        padding: 0 10px; 
+    }
+
+    header {
+        padding: 0 10px; 
+    }
+
+    header h2 {
+        font-size: 20px; 
+    }
+
+    header h3 {
+        font-size: 15px;
+    }
+
+    .titulo {
+        gap: 15px; 
+        text-align: center; 
+    }
+
+    #logo {
+        width: 40px; 
+        height: 40px; 
+    }
+
+    nav {
+        padding-top: 10px; 
+    }
+
+    nav td {
+        padding: 5px; 
+        text-align: center;
+        margin: 5px 0; 
+    }
+
+    nav button {
+        margin: 5px auto;
+    }
+
+    .pie {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        gap: 10px;
+    }
+
+    footer h2 {
+        font-size: 24px; 
+    }
+
+    .redes img {
+        width: 40px; 
+    }
+
+    .redes p {
+        display: none;
+    }
+
+    .copyright {
+        padding: 10px; 
+    }
+
+    .formulario1 {
+        flex-direction: column; 
+    }
+
+    .hijo2 {
+        margin-right: 0;
+    }
+
+    form button {
+        margin-left: 0; 
+    }
+
+    form p {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    form p img {
+        width: 20px; 
+    }
+
+    .iconitos img {
+        width: 20px; 
+    }
+}
